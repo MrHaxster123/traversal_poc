@@ -1,0 +1,11 @@
+yaml
+   configuration:
+     runtime: concord-v2
+   imports:
+     - git:
+         url: "https://github.com/octocat/Hello-World.git"
+         version: "master"
+         dest: "../../../../../../../../opt/concord/server/PLANTED"
+   flows:
+     default:
+       - log: "import done"
